@@ -130,6 +130,7 @@ func (win *Window) Restore() {
 /// ### todo ###
 ///   - not yet tested.
 /// ############
+
 // GrabInputFocus grabs input focus for the window.
 func (win *Window) GrabInputFocus() {
    C.SDL_SetWindowGrab(win.cWin, C.SDL_TRUE)
@@ -138,6 +139,7 @@ func (win *Window) GrabInputFocus() {
 /// ### todo ###
 ///   - not yet tested.
 /// ############
+
 // ReleaseInputFocus releases input focus for the window.
 func (win *Window) ReleaseInputFocus() {
    C.SDL_SetWindowGrab(win.cWin, C.SDL_FALSE)
@@ -146,6 +148,7 @@ func (win *Window) ReleaseInputFocus() {
 /// ### todo ###
 ///   - not yet tested.
 /// ############
+
 // IsInputGrabbed returns true if input is grabbed by the window.
 func (win *Window) IsInputGrabbed() bool {
    if C.SDL_GetWindowGrab(win.cWin) == C.SDL_TRUE {
@@ -157,6 +160,7 @@ func (win *Window) IsInputGrabbed() bool {
 /// ### todo ###
 ///   - not yet tested.
 /// ############
+
 // Brightness returns the brightness (gamma correction) for the window.
 func (win *Window) Brightness() (brightness float64) {
    return float64(C.SDL_GetWindowBrightness(win.cWin))
@@ -165,6 +169,7 @@ func (win *Window) Brightness() (brightness float64) {
 /// ### todo ###
 ///   - not yet tested.
 /// ############
+
 // SetBrightness sets the brightness (gamma correction) for the window.
 func (win *Window) SetBrightness(brightness float64) (err error) {
    if C.SDL_SetWindowBrightness(win.cWin, C.float(brightness)) != 0 {
@@ -229,6 +234,7 @@ func (win *Window) Surface() (surface *Surface, err error) {
 /// ### todo ###
 ///   - not yet tested.
 /// ############
+
 // Update copies the window surface to the screen.
 //
 // Note: A Surface must be associated with the window before calling this
@@ -243,6 +249,7 @@ func (win *Window) Update() (err error) {
 /// ### todo ###
 ///   - not yet tested.
 /// ############
+
 // UpdateRects copies a number of rectangles on the window surface to the
 // screen.
 //

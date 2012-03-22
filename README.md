@@ -1,12 +1,18 @@
 # sdl
 
-Package sdl provides bindings for the [SDL](http://www.libsdl.org/) library
-version 2.0.
+Package sdl provides bindings for the [SDL][] library, version 2.0.
+
+The project's [source code][] and [documentation][] are released into the
+[public domain][].
+
+[SDL]: http://www.libsdl.org/
+[source code]: https://github.com/0xC3/sdl/
+[documentation]: http://gopkgdoc.appspot.com/pkg/github.com/0xC3/sdl
+[public domain]: https://creativecommons.org/publicdomain/zero/1.0/
 
 ## Status
 
-Current status of the
-[API, sorted by category](http://wiki.libsdl.org/moin.cgi/APIByCategory):
+Current status of the [API, sorted by category][]:
 
     * Basics
       - Init                        : 100% ( 5/ 5)
@@ -50,3 +56,5 @@ Current status of the
       - Power                       :        skip
 
     * Total progress                :  23% ( 56/240)
+
+[API, sorted by category]: http://wiki.libsdl.org/moin.cgi/APIByCategory
