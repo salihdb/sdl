@@ -14,7 +14,7 @@ func goRect(cRect C.SDL_Rect) (rect image.Rectangle) {
    return image.Rect(int(cRect.x), int(cRect.y), int(cRect.x + cRect.w), int(cRect.y + cRect.h))
 }
 
-// goRect converts a go image.Rectangle to a C SDL_Rect.
+// cRect converts a go image.Rectangle to a C SDL_Rect.
 func cRect(rect image.Rectangle) (cRect *C.SDL_Rect) {
    if rect == image.ZR {
       return nil
